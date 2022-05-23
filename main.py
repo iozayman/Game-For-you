@@ -32,7 +32,7 @@ a = 0
 q6 = 0
 if q1 == "walk":
   q2 = input("You are an idiot but lucky enough to survive. Do you want to ride the horse? (Y/N)\n").lower()
-  if q2 == "Y":
+  if q2 == "y":
     q3 = input('Horse is safer way to travel boi. But the horse is stolen from a barbar. He wants to know "Who are you?" to forgive you. \nHINT: Confuse him\n').lower()
     if q3 == "you":
       q4 =input("You win!").lower()
@@ -54,6 +54,8 @@ if q1 == "walk":
           
     else: 
       print("Slow one dies. GAME OVER FAT ASS")
+  else:
+    print("horses are agressive. Game over")
 else:
   print("Something went wrong. You burn. Game over.")
 
