@@ -27,23 +27,23 @@ print("Your mission is to find the treasure.")
 
 #Write your code below this line 👇
 
-q1 = input('There is a town nearby, do you want to "teleport" or just "walk"?')
+q1 = input('There is a town nearby, do you want to "teleport" or just "walk"?').lower()
 a = 0
 q6 = 0
 if q1 == "walk":
-  q2 = input("You are an idiot but lucky enough to survive. Do you want to ride the horse? (Y/N)\n")
+  q2 = input("You are an idiot but lucky enough to survive. Do you want to ride the horse? (Y/N)\n").lower()
   if q2 == "Y":
-    q3 = input('Horse is safer way to travel boi. But the horse is stolen from a barbar. He wants to know "Who are you?" to forgive you. \nHINT: Confuse him\n')
-    if q3 == "you" or q3 == "You":
-      q4 =input("You win!")
-      if q4 == "You win!":
-        q5 = input("No. You win!")
-        q6 = "Creepy MF. YOU WIN"
-        if q5 == "No. You win!":
+    q3 = input('Horse is safer way to travel boi. But the horse is stolen from a barbar. He wants to know "Who are you?" to forgive you. \nHINT: Confuse him\n').lower()
+    if q3 == "you":
+      q4 =input("You win!").lower()
+      if q4 == "you win!":
+        q5 = input("No. You win!").lower()
+        q6 = "creepy mf. you win"
+        if q5 == "no. you win!":
           while a== 0:
-            if q6 == "Creepy MF. YOU WIN":
+            if q6 == "creepy mf. you win":
               q6 = 0
-              q6 = input("Creepy MF. YOU WIN")
+              q6 = input("Creepy MF. YOU WIN").lower
           else:
             a += 1
             print("You cant challenge the computer. DIE")
